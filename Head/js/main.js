@@ -58,3 +58,91 @@ $(function(){
   });  
 });
 //==============================================
+
+
+// настройка карточки схема
+// при клике на div ods-item у divа popup появляеться класс show
+$(function () {
+  $('.ods-item').on('click', function () {
+    $('.ods__item-popup').toggleClass('show')
+  });
+});
+//ри клике на div .popup-close у divа popup отбираеться класс show
+$(function () {
+  $('.popup-close-ods').on('click', function () {
+    $('.ods__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.ng103-item').on('click', function () {
+    $('.ng103__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-ng103').on('click', function () {
+    $('.ng103__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.reactors-item').on('click', function () {
+    $('.reactors__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-reactors').on('click', function () {
+    $('.reactors__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.interconnect-item').on('click', function () {
+    $('.interconnect__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-interconnect').on('click', function () {
+    $('.interconnect__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.voice-item').on('click', function () {
+    $('.voice__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-voice').on('click', function () {
+    $('.voice__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.operational-item').on('click', function () {
+    $('.operational__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-operational').on('click', function () {
+    $('.operational__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
+//-=====================================
+$(function () {
+  $('.reporting-item').on('click', function () {
+    $('.reporting__item-popup').toggleClass('show')
+  });
+});
+$(function () {
+  $('.popup-close-reporting').on('click', function () {
+    $('.reporting__item-popup').toggleClass('show')
+  });
+});
+//-=====================================
