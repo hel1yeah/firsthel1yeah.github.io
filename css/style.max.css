@@ -502,7 +502,7 @@ html {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 35%;
+    top: 20%;
     color: #ffffff;
     text-align: center;
     z-index: 10;
@@ -529,14 +529,14 @@ html {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    font-size: 12px;
+    font-size: 20px;
     transform: scale(2);
     opacity: 0;
 }
 
 .text_img a {
     color: #ffffff;
-    padding-top: 10px;
+    font-size: 18px;
 }
 
 .gallery_img:hover img {
