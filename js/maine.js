@@ -7,3 +7,19 @@
       $('.arrow_up-wrapper').fadeOut('slow');
     }
   });
+
+var wrapperMenu = document.querySelector('.wrapper-menu');
+  wrapperMenu.addEventListener('click', function () {
+  wrapperMenu.classList.toggle('open');
+})
+
+$(document).ready(function () {
+  $('.wrapper-menu').click(function (event) {
+    $('.menu').toggleClass('active')
+    $('body').toggleClass('lock');
+  });
+  $('.menu').click(function (event) {
+    $('.menu').toggleClass('active')
+    $('body').toggleClass('lock');
+  });
+});
