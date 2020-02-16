@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  /*----------------------- ПОЯВЛЕНИЕ ОКОНА С ДОПОЛНИТЕЛЬНОЙ ИНФОРМАЦИЕЙ ПРИ НАВЕДЕНИ НА ЧАСТЬ КАРТЫ -----------------------*/
 
   const hoverOneMap = document.querySelector('.hover-rivne-region'),
     showPopupOne = document.querySelector('.map-popup_rivne-region');
@@ -34,6 +33,51 @@ document.addEventListener('DOMContentLoaded', function () {
   const hoverElevenMap = document.querySelector('.hover-zaporozhye-region'),
     showPopupEleven = document.querySelector('.map-popup_zaporozhye-region');
 
+  const hoverTwelveMap = document.querySelector('.hover-volyn-region'),
+    showPopupTwelve = document.querySelector('.map-popup_volyn-region');
+
+  const hoverThirteenMap = document.querySelector('.hover-lviv-region'),
+    showPopupThirteen = document.querySelector('.map-popup_lviv-region');
+
+  const hoverFourteenMap = document.querySelector('.hover-zakarpattia-region'),
+    showPopupFourteen = document.querySelector('.map-popup_zakarpattia-region');
+
+  const hoverFifteenMap = document.querySelector('.hover-khmelnytsky-region'),
+    showPopupFifteen = document.querySelector('.map-popup_khmelnytsky-region');
+
+  const hoverSixteenMap = document.querySelector('.hover-chernivtsi-region'),
+    showPopupSixteen = document.querySelector('.map-popup_chernivtsi-region');
+
+  const hoverSeventeenMap = document.querySelector('.hover-zhytomyr-region'),
+    showPopupSeventeen = document.querySelector('.map-popup_zhytomyr-region');
+
+  const hoverEighteenMap = document.querySelector('.hover-cherkasy-region'),
+    showPopupEighteen = document.querySelector('.map-popup_cherkasy-region');
+
+  const hoverNineteenMap = document.querySelector('.hover-kirovograd-region'),
+    showPopupNineteen = document.querySelector('.map-popup_kirovograd-region');
+
+  const hoverTwentyMap = document.querySelector('.hover-mykolaiv-region'),
+    showPopupTwenty = document.querySelector('.map-popup_mykolaiv-region');
+
+  const hoverTwentyOneMap = document.querySelector('.hover-sumy-region'),
+    showPopupTwentyOne = document.querySelector('.map-popup_sumy-region');
+
+  const hoverTwentyTwoMap = document.querySelector('.hover-poltava-region'),
+    showPopupTwentyTwo = document.querySelector('.map-popup_poltava-region');
+
+  const hoverTwentyThreeMap = document.querySelector('.hover-donetsk-region'),
+    showPopupTwentyThree = document.querySelector('.map-popup_donetsk-region');
+
+  const hoverTwentyFourMap = document.querySelector('.hover-lugansk-region'),
+    showPopupTwentyFour = document.querySelector('.map-popup_lugansk-region');
+
+  const hoverTwentyFiveMap = document.querySelector('.hover-crimea-region'),
+    showPopupTwentyFive = document.querySelector('.map-popup_crimea-region');
+
+  const hoverTwentySixMap = document.querySelector('.hover-kiev-city'),
+    showPopupTwentySix = document.querySelector('.map-popup_kiev-city');
+
 
   function hoverMap(area, popup) {
     area.addEventListener('mousemove', () => {
@@ -43,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
       popup.classList.remove('show');
     });
   }
+
   hoverMap(hoverOneMap, showPopupOne);
   hoverMap(hoverTwoMap, showPopupTwo);
   hoverMap(hoverThreeMap, showPopupThree);
@@ -54,6 +99,21 @@ document.addEventListener('DOMContentLoaded', function () {
   hoverMap(hoverNineMap, showPopupNine);
   hoverMap(hoverTenMap, showPopupTen);
   hoverMap(hoverElevenMap, showPopupEleven);
+  hoverMap(hoverTwelveMap, showPopupTwelve);
+  hoverMap(hoverThirteenMap, showPopupThirteen);
+  hoverMap(hoverFourteenMap, showPopupFourteen);
+  hoverMap(hoverFifteenMap, showPopupFifteen);
+  hoverMap(hoverSixteenMap, showPopupSixteen);
+  hoverMap(hoverSeventeenMap, showPopupSeventeen);
+  hoverMap(hoverEighteenMap, showPopupEighteen);
+  hoverMap(hoverNineteenMap, showPopupNineteen);
+  hoverMap(hoverTwentyMap, showPopupTwenty);
+  hoverMap(hoverTwentyOneMap, showPopupTwentyOne);
+  hoverMap(hoverTwentyTwoMap, showPopupTwentyTwo);
+  hoverMap(hoverTwentyThreeMap, showPopupTwentyThree);
+  hoverMap(hoverTwentyFourMap, showPopupTwentyFour);
+  hoverMap(hoverTwentyFiveMap, showPopupTwentyFive);
+  hoverMap(hoverTwentySixMap , showPopupTwentySix);
 
   function hoverHandler(e) {
     this.querySelectorAll('.hover-opacity').forEach(n => {
@@ -63,55 +123,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const map = document.querySelector('.status__map svg');
   map.addEventListener('mouseover', hoverHandler);
   map.addEventListener('mouseout', hoverHandler);
-
-
-
-
-  /* -------------------------------ДРУГАЯ ВЕРСИЯ КОДА-OPACITY-------------------------------------- */
-
-  //создаем переменные, перавя из которых - это блок, в которую вся карта завёрнута
-  // let map = document.querySelector('.status__map');
-  // //а вторая переменная - это классы, добавленные к каждому участку карты
-  // let hover = document.querySelectorAll('.hover-opacity');
-
-
-  // //создаётся функция для будущего переиспользования, куда передаём два аргумента. 
-  // //Первая - это родитель, то есть вся блок в которую карта завёрнута. А второй аргумени эффект при наведении
-  // function hoverMap(findingParent, hoverEffects) {
-  //     //при наведении на блок с картой внутри, будет вешаться событие
-  //     findingParent.addEventListener('mousemove', (event) => {
-  //         //исходя из которого запускается цикл и перебираем все элементы внутри, так как без него работать не будет (можно было бы воспользоваться и перебирающим методом forEach(), но так проще)
-  //         for (let i = 0; i < hoverEffects.length; i++) {
-  //             //после чего у всех элементом понижается видимость opacity
-  //             hoverEffects[i].style.opacity = '0.7';
-  //         }
-  //         //но на том элементе, на котором находится мышь ничего не происходит, он так и остаётся нормально виден
-  //         event.target.style.opacity = '1';        
-  //     });
-  //     //событие вещается тогда, когда мышь уходишь от карты
-  //     findingParent.addEventListener('mouseout', () => {
-  //         //создаётся цикл, всё перебирается и все элементы возвращаются к обычному состоянию
-  //         for (let i = 0; i < hoverEffects.length; i++) {
-  //             hoverEffects[i].style.opacity = '1';
-  //         }
-  //     });
-  // }
-  // hoverMap(map, hover);
-
-
-  /* -------------------------------ПРИ КЛИКЕ-------------------------------------- */
-
-  // const allItemMap = document.querySelectorAll('.hover-opacity');
-  // allItemMap.forEach(event => {
-  //     event.addEventListener('click', function({target}) {
-  //         let dataAttribute = target.getAttribute('data');
-
-  //         document.querySelectorAll('.map-popup').forEach(item => {
-  //             item.style.display = 'none';
-  //         });
-  //         document.querySelector(`.map-popup[data="${dataAttribute}"]`).style.display = 'block';
-  //     });
-  // });
 
 });
 

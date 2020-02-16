@@ -7,6 +7,7 @@ $(function(){
     $('.region').toggleClass('hide')
   });  
 });
+
 // зеркальная ситуация при клике на div  .region-back отбераем класс hide у divа region и у divа .region-back отбераем класс show
 $(function(){
   $('.region-back').on('click', function () {
