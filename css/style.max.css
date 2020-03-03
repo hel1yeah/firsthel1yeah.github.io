@@ -318,56 +318,61 @@ html {
 }
 
 .social ul {
-    list-style-type: none;
-    line-height: 25px;
-    display: flex;
-    flex-direction: column;
-
+  list-style-type: none;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .social a {
-    font-family: "Museo Sans Cyrl 300";
-    text-decoration: none;
-    color: #204d15;
+  font-family: "Museo Sans Cyrl 300";
+  text-decoration: none;
+  color: #204d15;
 }
 
 .social ul li {
-    background-color: #fff;
-    overflow: hidden;
-    width: 100%;
-    width: 180px;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  width: 180px;
 }
 
 .social ul li .fb {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    transition: .7s;
-    font-size: 1.250rem;
-    color: #204d15;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: .7s;
+  font-size: 1.250rem;
+  color: #204d15;
 }
 
 .social ul li:hover .fb {
-    left: 200px;
-    opacity: 1;
+  left: 200px;
+  opacity: 1;
 }
 
 .social ul li .li {
-    left: 0px;
-    top: 25px;
+  left: 0px;
+  top: 25px;
 }
 
 .social ul li .tel {
-    left: 0px;
-    top: 50px;
-}
-.social ul li .git {
-    position:absolute;
-    left: 0px;
-    top: 100px;
+  left: 0px;
+  top: 50px;
 }
 
+.social ul li .git {
+  position: absolute;
+  left: 0px;
+  top: 100px;
+}
+.social ul li .google {
+  position: absolute;
+  left: 0px;
+  top: 125px;
+}
 
 /*<!--=============   /about me  =============-->*/
 
