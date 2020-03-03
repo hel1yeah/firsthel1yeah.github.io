@@ -509,6 +509,9 @@ html {
     z-index: 10;
     margin: auto;
 }
+.text_img.surf_item-img {
+  top: 10%;
+}
 
 .text_img h5 {
     font-size: 30px;
@@ -538,6 +541,7 @@ html {
 .text_img a {
     color: #ffffff;
     font-size: 18px;
+    margin: 10px;
 }
 
 .gallery_img:hover img {
