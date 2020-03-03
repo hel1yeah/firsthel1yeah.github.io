@@ -190,15 +190,18 @@ html {
     color: #fff;
     text-align: center;
 }
-.arrow_up-wrapper .arrow a{
-    display: block;
-    position: fixed;
-    border: 1px solid #204d15;
-    color:#204d15;
-    right: 3%;
-    bottom: 3%;
-    z-index: 100;
-    box-shadow: 0px 0px 15px -1px rgba(61, 100, 51, 0.75);
+.arrow_up-wrapper {
+  display: none;
+}
+
+.arrow_up-wrapper .arrow a {
+  position: fixed;
+  border: 1px solid #204d15;
+  color: #204d15;
+  right: 3%;
+  bottom: 3%;
+  z-index: 100;
+  box-shadow: 0px 0px 15px -1px rgba(61, 100, 51, 0.75);
 }
 
 
