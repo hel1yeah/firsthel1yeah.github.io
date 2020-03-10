@@ -46,7 +46,7 @@ html {
 .header::before {
   content: " ";
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #000000;
   position: absolute;
   top: 0px;
@@ -474,6 +474,8 @@ html {
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0px;
+  left: 0px;
 
 }
 .working h2 {

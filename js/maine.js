@@ -27,6 +27,8 @@ $(document).ready(function () {
     $('body').toggleClass('lock');
   });
 
+
+  // particles -------------------------
   particlesJS.load('particles', '/libs/particles/particles.json');
 
 });
