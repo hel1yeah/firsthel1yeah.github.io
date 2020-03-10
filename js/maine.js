@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  //---------------------------------КНОПКА ВОЗВРАЩЕНИЯ ВВЕРХ---------------------------------
+  //----------КНОПКА ВОЗВРАЩЕНИЯ ВВЕРХ--------------
   //следит за тем, сколько пикеселей ушло вверх. При скроле 1700 пикселей появляется кнопка. Если меньше, она пропадает
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 var wrapperMenu = document.querySelector('.wrapper-menu');
-  wrapperMenu.addEventListener('click', function () {
+wrapperMenu.addEventListener('click', function () {
   wrapperMenu.classList.toggle('open');
 })
 
@@ -26,4 +26,7 @@ $(document).ready(function () {
     $('.menu').toggleClass('active')
     $('body').toggleClass('lock');
   });
+
+  particlesJS.load('particles', '/libs/particles/particles.json');
+
 });
